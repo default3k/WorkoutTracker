@@ -1,8 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.WorkoutTracker" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.WorkoutTracker" parent="Theme.Material3.Light">
+        <item name="colorPrimary">#8CA780</item>
+        <item name="colorPrimaryVariant">#95A17F</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#B7C9A6</item>
+        <item name="colorSecondaryVariant">#7D855E</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="android:statusBarColor">#E4EDDB</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="Theme.WorkoutTracker" parent="Base.Theme.WorkoutTracker" />

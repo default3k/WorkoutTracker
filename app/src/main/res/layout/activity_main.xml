@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -37,32 +38,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintWidth_percent="0.8">
-
-        <ImageView
-            android:id="@+id/arrowLeft"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginEnd="5dp"
-            android:contentDescription="Предыдущий месяц"
-            app:srcCompat="@drawable/str1"/>
-
-        <TextView
-            android:id="@+id/monthTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Октябрь 2025"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:gravity="center" />
-
-        <ImageView
-            android:id="@+id/arrowRight"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="5dp"
-            android:contentDescription="Следующий месяц"
-            app:srcCompat="@drawable/str2" />
     </LinearLayout>
 
     <!-- ====== Круг прогресса ====== -->
@@ -88,27 +63,30 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textCircleDayOfWeek"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Четверг"
+                android:text="Понедельник"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/textCircleDayMonth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="9 октября"
+                android:text="1 января"
                 android:textColor="#FFFFFF"
                 android:textSize="32sp" />
+
             <TextView
+                android:id="@+id/textCircleYear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="2025"
+                android:text="2000"
                 android:textColor="#FFFFFF"
                 android:textSize="40sp" />
-
         </LinearLayout>
     </FrameLayout>
 
@@ -117,13 +95,14 @@
         android:id="@+id/buttonsBlock"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center_horizontal"
-        app:layout_constraintTop_toBottomOf="@id/progressCircle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressCircle"
+        app:layout_constraintVertical_bias="0.463"
         app:layout_constraintWidth_percent="0.55">
 
         <Button
@@ -149,4 +128,5 @@
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
